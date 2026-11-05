@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BrewPage Publisher options</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <label for="namespace">Namespace</label>
+  <input type="text" id="namespace" placeholder="my" maxlength="32" autocomplete="off">
+  <p class="hint">Lowercase letters, digits and dashes. <strong>my</strong> (default) keeps publications unlisted; <strong>public</strong> lists them in the BrewPage gallery and search.</p>
+  <label for="token">Owner token</label>
+  <input type="password" id="token" autocomplete="off" placeholder="Saved automatically after the first publish">
+  <p class="hint">Groups your publications under one owner so you can manage them on brewpage.app. Stored only in this browser.</p>
+  <div class="row">
+    <button id="save" class="primary">Save</button>
+    <button id="clear-token">Forget token</button>
+  </div>
+  <p id="status" class="meta" role="status"></p>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

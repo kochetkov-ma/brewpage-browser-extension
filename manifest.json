@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "BrewPage Publisher",
+  "version": "1.0.0",
+  "description": "Publish the current tab, a text selection or an image to BrewPage and get a shareable link.",
+  "homepage_url": "https://brewpage.app",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Publish to BrewPage",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "contextMenus"],
+  "host_permissions": ["https://brewpage.app/*"]
+}

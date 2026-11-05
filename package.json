@@ -1,0 +1,19 @@
+{
+  "name": "brewpage-browser-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrewPage Publisher: publish the current tab, a selection or an image to BrewPage.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "package": "node scripts/package.mjs",
+    "lint": "node scripts/package.mjs firefox && web-ext lint --source-dir dist/firefox"
+  },
+  "devDependencies": {
+    "web-ext": "10.8.0"
+  }
+}

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Upload to BrewPage</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <h1>Upload an image or file to BrewPage</h1>
+  <label for="file">File</label>
+  <input type="file" id="file">
+  <p class="hint">Images, PDFs, documents, archives and other safe file types. HTML and Markdown files become pages.</p>
+  <button id="upload" class="primary" disabled>Upload</button>
+  <div id="status" class="result" hidden></div>
+  <script type="module" src="upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BrewPage Publisher</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="popup">
+  <h1>Publish to BrewPage</h1>
+  <button id="publish-page" class="primary" data-action="page">Publish this page</button>
+  <button id="publish-selection" data-action="selection">Publish selection as Markdown</button>
+  <button id="upload-file">Upload an image or file</button>
+  <div id="status" class="result" hidden></div>
+  <p class="meta">Namespace: <strong id="namespace">my</strong> · <a class="link" href="#" id="open-options">Options</a></p>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
