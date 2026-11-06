@@ -1,5 +1,10 @@
 # BrewPage Publisher
 
+<p>
+<a href="https://github.com/kochetkov-ma/brewpage-browser-extension/releases/latest"><img height="18" alt="Release" src="https://img.shields.io/github/v/release/kochetkov-ma/brewpage-browser-extension"></a>
+<a href="https://github.com/kochetkov-ma/brewpage-browser-extension/blob/main/LICENSE"><img height="18" alt="License MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
+</p>
+
 Browser extension (Manifest V3) that publishes what you are looking at to [BrewPage](https://brewpage.app) and gives you a shareable link.
 
 - **Publish this page**: a static HTML snapshot of the current tab (scripts and inline event handlers removed, relative links kept working through a `<base>` tag).
@@ -45,7 +50,19 @@ npm run package   # dist/brewpage-publisher-{chromium,firefox}-<version>.zip
 
 `scripts/package.mjs` copies `src/`, `icons/` and `LICENSE`, writes the target manifest (Firefox: `background.scripts`, `browser_specific_settings.gecko`) and zips it with the system `zip`.
 
-API contract: [brewpage-openapi](https://github.com/kochetkov-ma/brewpage-openapi).
+## Related
+
+- [brewpage.app](https://brewpage.app): the hosting service; [API guide](https://brewpage.app/api); [OpenAPI docs](https://kochetkov-ma.github.io/brewpage-openapi/)
+- [brewpage-openapi](https://github.com/kochetkov-ma/brewpage-openapi): OpenAPI contract and the `brewpage-mcp` MCP server ([npm](https://www.npmjs.com/package/brewpage-mcp))
+- [brewpage-action](https://github.com/kochetkov-ma/brewpage-action): GitHub Action that publishes CI artifacts ([Marketplace](https://github.com/marketplace/actions/publish-to-brewpage))
+- [brewpage-cookbook](https://github.com/kochetkov-ma/brewpage-cookbook): interactive recipes published on BrewPage
+- [brewpage-obsidian](https://github.com/kochetkov-ma/brewpage-obsidian): Obsidian plugin that publishes notes ([Obsidian community](https://community.obsidian.md/plugins/brewpage-publisher))
+- [brewpage-codex-plugin](https://github.com/kochetkov-ma/brewpage-codex-plugin): Codex plugin with the publishing skill and remote MCP
+- [brewpage-publish-plugins](https://github.com/kochetkov-ma/brewpage-publish-plugins): publishing plugins for AI coding tools and the n8n node ([npm](https://www.npmjs.com/package/n8n-nodes-brewpage))
+- [langchain-brewpage](https://github.com/kochetkov-ma/langchain-brewpage): LangChain tools ([PyPI](https://pypi.org/project/langchain-brewpage/))
+- [llama-index-tools-brewpage](https://github.com/kochetkov-ma/llama-index-tools-brewpage): LlamaIndex tool spec ([PyPI](https://pypi.org/project/llama-index-tools-brewpage/))
+
+Support: [info@brewpage.app](mailto:info@brewpage.app)
 
 ## License
 
