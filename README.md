@@ -21,7 +21,7 @@ Every action is also in the right-click menu. The result shows the link with a *
 
 ## Privacy and network use
 
-The extension talks only to `https://brewpage.app` and only when you click a publish action. It sends the content you chose (page snapshot, selection, image or file) and your owner token. Nothing runs in the background, there is no analytics or tracking, and no remote code is loaded. Settings stay in `storage.local` of your browser. BrewPage privacy policy: <https://brewpage.app/privacy>.
+The extension talks only to `https://brewpage.app` and only when you click a publish action. It sends the content you chose (page snapshot, selection, image or file) and your owner token. Each publish also carries a fixed client label with the extension version (`X-BrewPage-Client: extension/<version>`), no personal data. Nothing runs in the background, there is no analytics or tracking, and no remote code is loaded. Settings stay in `storage.local` of your browser. BrewPage privacy policy: <https://brewpage.app/privacy>.
 
 Permissions:
 

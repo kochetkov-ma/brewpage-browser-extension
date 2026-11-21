@@ -26,8 +26,15 @@ async function readResult(response) {
   return { link: body.link, ownerToken: body.ownerToken ?? '', namespace: body.namespace ?? '' };
 }
 
+// Fixed client label with the extension version; carries nothing personal.
+export function clientLabel() {
+  const runtime = globalThis.chrome?.runtime ?? globalThis.browser?.runtime;
+  return `extension/${runtime?.getManifest?.().version ?? '0'}`;
+}
+
 function headers(ownerToken, extra = {}) {
-  return ownerToken ? { ...extra, 'X-Owner-Token': ownerToken } : extra;
+  const base = { ...extra, 'X-BrewPage-Client': clientLabel() };
+  return ownerToken ? { ...base, 'X-Owner-Token': ownerToken } : base;
 }
 
 export async function publishText({ content, format, filename, namespace, ownerToken, fetchImpl = fetch }) {

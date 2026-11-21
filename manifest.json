@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BrewPage Publisher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Publish the current tab, a text selection or an image to BrewPage and get a shareable link.",
   "homepage_url": "https://brewpage.app",
   "icons": {
