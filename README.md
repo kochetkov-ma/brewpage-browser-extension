@@ -14,6 +14,10 @@ Browser extension (Manifest V3) that publishes what you are looking at to [BrewP
 
 Every action is also in the right-click menu. The result shows the link with a **Copy link** button.
 
+Install BrewPage Publisher in your browser. Open a page and click **Publish this page**, select text and click **Publish selection as Markdown**, or right-click an image and choose **Publish image to BrewPage**. Share the returned link. Keep your owner token and any management link private.
+
+[Help](https://brewpage.app/help) · [MCP setup and integrations](https://brewpage.app/integrations#remote-mcp) · [Guide for LLMs](https://brewpage.app/llms.txt) · [Feedback](mailto:info@brewpage.app)
+
 ## Options
 
 - **Namespace** (default `my`): `my` keeps publications unlisted; anyone with the link can open them. `public` lists them in the BrewPage gallery and search engines. Any other `[a-z0-9-]{1,32}` name works too.
